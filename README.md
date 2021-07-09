@@ -56,9 +56,9 @@ from avonage.client import send_sms
 
 loop = asyncio.get_event_loop()
 loop.run_until_complete(send_sms(key=os.environ.get("VONAGE_KEY", None),
-                                         secret=os.environ.get("VONAGE_SECRET", None),
-                                         from_num=os.getenv('VONAGE_VIRTUAL_NUM'),
-                                         to_num=os.getenv('VONAGE_RECEIVER_NUM'),
-                                         sms_text='Hi there!',
-                                         loop=loop))
+                                 secret=os.environ.get("VONAGE_SECRET", None),
+                                 from_num=os.getenv('VONAGE_VIRTUAL_NUM'),
+                                 to_num=os.getenv('VONAGE_RECEIVER_NUM'),
+                                 text='Hi there!',
+                                 loop=loop))
 ```

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 from os import path
-from distutils.core import setup
+from setuptools import setup
 
 
 this_directory = path.abspath(path.dirname(__file__))
@@ -20,6 +20,6 @@ setup(name='avonage',
       install_requires=[
           'aiohttp',
       ],
-      long_description=long_description,
       long_description_content_type='text/markdown',
+      long_description=long_description,
       zip_safe=False)
